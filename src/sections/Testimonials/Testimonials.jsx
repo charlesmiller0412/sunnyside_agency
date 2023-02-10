@@ -3,6 +3,8 @@ import { ClientCard } from "./components/clientCard";
 import Emily from "../../assets/image-emily.jpg";
 import Thomas from "../../assets/image-thomas.jpg";
 import Jennie from "../../assets/image-jennie.jpg";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+
 const data = [
     {
         id: 1,
@@ -30,7 +32,12 @@ export default function Testimonials() {
     return (
         <section className="testimonials">
             <h4 className="testimonials__heading">client testimonials</h4>
-            <div className="testimonials__cards">
+            <AnimationOnScroll
+                animateIn="animate__backInUp"
+                className="testimonials__cards"
+                duration={1.5}
+                animateOnce="true"
+            >
                 {data.map((client) => (
                     <ClientCard
                         key={client.id}
@@ -40,7 +47,7 @@ export default function Testimonials() {
                         title={client.title}
                     />
                 ))}
-            </div>
+            </AnimationOnScroll>{" "}
         </section>
     );
 }

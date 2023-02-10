@@ -12,7 +12,7 @@ export default function Nav() {
     const matches = useMediaQuery("(min-width: 768px)");
 
     useScrollPosition(({ currPos }) => {
-        if (currPos.y < 0) {
+        if (currPos.y < -50) {
             setScrolled(true);
         } else {
             setScrolled(false);
@@ -45,7 +45,15 @@ export default function Nav() {
                     setShowMenu={setShowMenu}
                     showMenu={showMenu}
                     matches={matches}
-                    fill={scrolled ? "#24303E" : "#FFFFFF"}
+                    fill={
+                        showMenu
+                            ? scrolled
+                                ? "#000000"
+                                : "rgba(255,255,255,.5)"
+                            : scrolled
+                            ? "#24303E"
+                            : "#FFFFFF"
+                    }
                 />
             )}
             <NavMenu showMenu={showMenu} />
