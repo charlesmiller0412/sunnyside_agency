@@ -1,0 +1,11 @@
+.imageSection {
+    font-size: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media screen and (min-width: $tablet) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    & img {
+        width: 100%;
+    }
+}

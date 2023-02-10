@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.8rem;
+    height: 100vh;
+    height: 100dvh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+main {
+    margin: auto;
+    max-width: 1440px;
+}
+
+h2 {
+    font-family: $fraunces;
+    font-size: 3.2rem;
+    font-size: clamp(2.8rem, 2vw, 3.2rem);
+    line-height: 3.946rem;
+    letter-spacing: -0.023rem;
+    @media screen and (min-width: $tablet) {
+        font-weight: $boldBlack;
+        font-size: 4rem;
+        font-size: clamp(3rem, 2vw, 4rem);
+        line-height: 4.932rem;
+        letter-spacing: -0.029rem;
+    }
+}
+
+p {
+    font-family: $barlow;
+    font-size: 1.8rem;
+    font-size: clamp(1.2rem, 1.5vw, 1.8rem);
+    font-weight: $semi;
+    line-height: 3rem;
+    letter-spacing: -0.013rem;
+}

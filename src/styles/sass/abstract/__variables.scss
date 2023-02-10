@@ -1,0 +1,26 @@
+// primary colors
+$red: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$cyanD: hsl(167, 40%, 24%);
+$blueD: hsl(198, 62%, 26%);
+$cyanM: hsl(168, 34%, 41%);
+
+// neutral colors
+$black: hsl(212, 27%, 19%);
+$grayD: hsl(210, 9%, 39%);
+$grayBlueD: hsl(232, 10%, 55%);
+$grayBlue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+// weights
+$semi: 600;
+$bold: 700;
+$boldBlack: 900;
+
+// family
+$barlow: "Barlow", sans-serif;
+$fraunces: "Fraunces", serif;
+
+// media queries
+$tablet: 768px;
+$desktop: 1024px;

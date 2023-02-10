@@ -1,0 +1,65 @@
+.footer {
+    background: #90d4c6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 7rem;
+    max-width: 144rem;
+    margin: auto;
+    @media screen and (min-width: $tablet) {
+        padding: 7.2rem 0;
+    }
+    &__logo {
+        // color: $cyanD;
+    }
+    &__links {
+        margin: 4rem 0 9rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5.7rem;
+        & a {
+            font-family: $barlow;
+            color: $cyanM;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            letter-spacing: -0.0128571rem;
+            text-decoration: none;
+            @media screen and (min-width: $tablet) {
+                &:hover {
+                    color: #fff;
+                    transition: all 0.2s;
+                    -webkit-transition: all 0.2s;
+                    -moz-transition: all 0.2s;
+                    -ms-transition: all 0.2s;
+                    -o-transition: all 0.2s;
+                }
+            }
+        }
+    }
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.8rem;
+        & a {
+            transition: all 0.2s;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            cursor: pointer;
+            @media screen and (min-width: $tablet) {
+                &:hover {
+                    & path {
+                        fill: #fff;
+                        transition: all 0.2s;
+                        -webkit-transition: all 0.2s;
+                        -moz-transition: all 0.2s;
+                        -ms-transition: all 0.2s;
+                        -o-transition: all 0.2s;
+                    }
+                }
+            }
+        }
+    }
+}

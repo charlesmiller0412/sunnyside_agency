@@ -1,0 +1,30 @@
+.hero {
+    height: 100vh;
+    height: 100dvh;
+    width: 100%;
+    background: url(../../assets/mobile/image-header.jpg) no-repeat center
+        bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    @media screen and (min-width: $tablet) {
+        background: url(../../assets/desktop/image-header.jpg) no-repeat center
+            center;
+        background-size: cover;
+    }
+
+    &__heading {
+        text-transform: uppercase;
+        font-family: $fraunces;
+        font-size: 4rem;
+        letter-spacing: 0.625rem;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+}

@@ -1,0 +1,75 @@
+.testimonials {
+    padding: 6.4rem 2.4rem;
+    background-color: #fff;
+    @media screen and (min-width: $tablet) {
+        padding: 16rem 16.5rem;
+    }
+    &__heading {
+        text-align: center;
+        font-family: $fraunces;
+        font-size: 1.6rem;
+        font-weight: $boldBlack;
+        line-height: 2rem;
+        letter-spacing: 0.4rem;
+        text-transform: uppercase;
+        color: $grayBlue;
+        margin-bottom: 6.4rem;
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 8rem;
+        }
+    }
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 6.4rem;
+        @media screen and (min-width: $tablet) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+.clientCard {
+    height: fit-content;
+    text-align: center;
+    display: grid;
+    gap: 3.2rem;
+    &__image {
+        margin: auto;
+        height: 7.2rem;
+        width: 7.2rem;
+        & img {
+            width: 100%;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+    }
+    &--text {
+        color: $grayD;
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        letter-spacing: -0.0128571rem;
+    }
+    &__info {
+        display: grid;
+        gap: 0.9rem;
+        &--name {
+            text-transform: capitalize;
+            font-family: $fraunces;
+            font-weight: $boldBlack;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            letter-spacing: -0.0128571rem;
+            color: $black;
+        }
+        &--title {
+            text-transform: capitalize;
+            color: $grayBlue;
+            font-size: 1.4rem;
+            line-height: 2.5rem;
+            letter-spacing: 0.01rem;
+        }
+    }
+}

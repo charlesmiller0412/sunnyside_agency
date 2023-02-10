@@ -1,0 +1,141 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1460px;
+    padding: 3.2rem 2.4rem;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    @media screen and (min-width: $tablet) {
+        padding: 3.4rem 4.5rem;
+    }
+    &Links {
+        display: flex;
+        list-style-type: none;
+        gap: 4.7rem;
+        & a {
+            text-decoration: none;
+            text-transform: capitalize;
+            color: #fff;
+            font-family: $barlow;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            letter-spacing: -0.0128571rem;
+            transition: all 0.2s;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            &:hover {
+                color: $yellow;
+                transition: all 0.2s;
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 0.2s;
+                -ms-transition: all 0.2s;
+                -o-transition: all 0.2s;
+            }
+        }
+        &__link {
+            &--contact {
+                & a {
+                    font-family: $fraunces;
+                    font-weight: $bold;
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+                    letter-spacing: -0.011rem;
+                    color: $black;
+                    background: #fff;
+                    border-radius: 2.8rem;
+                    -webkit-border-radius: 2.8rem;
+                    -moz-border-radius: 2.8rem;
+                    -ms-border-radius: 2.8rem;
+                    -o-border-radius: 2.8rem;
+                    padding: 1.6rem 3.2rem;
+                    transition: all 0.2s;
+                    -webkit-transition: all 0.2s;
+                    -moz-transition: all 0.2s;
+                    -ms-transition: all 0.2s;
+                    -o-transition: all 0.2s;
+                    &:hover {
+                        color: #fff;
+                        background-color: rgba(255, 255, 255, 0.25);
+                        transition: all 0.2s;
+                        -webkit-transition: all 0.2s;
+                        -moz-transition: all 0.2s;
+                        -ms-transition: all 0.2s;
+                        -o-transition: all 0.2s;
+                    }
+                }
+            }
+        }
+    }
+    &__hamburger {
+        cursor: pointer;
+        user-select: none;
+        &--active {
+            cursor: pointer;
+            & path {
+                fill: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+    &__menu {
+        background-color: #fff;
+        user-select: none;
+        position: absolute;
+        top: -600%;
+        left: 50%;
+        overflow: hidden;
+        width: calc(100% - 4.5rem);
+        height: fit-content;
+        transform: translateX(-50%);
+        clip-path: polygon(92% 10%, 100% 0, 100% 100%, 0 100%, 0 10%);
+        padding: 6.3rem 0 4rem 0;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        z-index: 100;
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        &--active {
+            top: 8rem;
+            transition: all 0.2s;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            -o-transition: all 0.2s;
+        }
+        & .navLinks {
+            flex-direction: column;
+            gap: 3.2rem;
+            text-align: center;
+            & a {
+                font-size: 2rem;
+                line-height: 2.5rem;
+                letter-spacing: -0.0142857rem;
+                color: $grayBlueD;
+            }
+            &__link--contact a {
+                color: $black;
+                text-transform: uppercase;
+                background-color: $yellow;
+            }
+        }
+    }
+}
