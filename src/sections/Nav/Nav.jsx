@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import { Logo } from "../../components/Logo";
 import { NavBtn } from "./components/NavBtn";
 import { NavLinks } from "./components/NavLinks";
@@ -17,6 +17,10 @@ export default function Nav() {
         } else {
             setScrolled(false);
         }
+    });
+
+    useLayoutEffect(() => {
+        matches && setShowMenu(false);
     });
 
     return (
@@ -40,6 +44,7 @@ export default function Nav() {
                 <NavBtn
                     setShowMenu={setShowMenu}
                     showMenu={showMenu}
+                    matches={matches}
                     fill={scrolled ? "#24303E" : "#FFFFFF"}
                 />
             )}
