@@ -1,6 +1,7 @@
 .testimonials {
     padding: 6.4rem 2.4rem;
     background-color: #fff;
+    overflow: hidden;
     @media screen and (min-width: $tablet) {
         padding: 16rem 16.5rem;
     }

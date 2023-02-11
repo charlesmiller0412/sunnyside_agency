@@ -18,7 +18,7 @@ body {
 
 main {
   margin: auto;
-  max-width: 1440px;
+  max-width: 1728px;
 }
 
 h2 {
@@ -241,6 +241,7 @@ p {
 .testimonials {
   padding: 6.4rem 2.4rem;
   background-color: #fff;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .testimonials {
@@ -340,7 +341,6 @@ p {
   flex-direction: column;
   align-items: center;
   padding: 4rem 7rem;
-  max-width: 144rem;
   margin: auto;
 }
 @media screen and (min-width: 768px) {
@@ -400,18 +400,11 @@ p {
 .nav {
   position: fixed;
   top: 0;
-  left: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1460px;
   padding: 3.2rem 2.4rem;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;

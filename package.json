@@ -2,15 +2,20 @@
     "name": "sunnyside_agency",
     "version": "1.0.0",
     "description": "",
-    "private": true,
+    "private": false,
+    "repository": {
+        "url": "git+https://github.com/charlesmiller0412/sunnyside_agency.git"
+    },
     "scripts": {
-        "build": "webpack --mode production",
+        "build": "webpack --mode development",
         "start": "webpack-dev-server --open",
         "serve": "webpack serve --mode development",
-        "sass": "sass src/styles/sass:src/styles/css --watch --no-source-map"
+        "sass": "sass src/styles/sass:src/styles/css --watch --no-source-map",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
     },
     "keywords": [],
-    "author": "",
+    "author": "Charles Miller",
     "license": "ISC",
     "devDependencies": {
         "@babel/core": "^7.20.12",
@@ -19,6 +24,7 @@
         "babel-loader": "^9.1.2",
         "css-loader": "^6.7.3",
         "file-loader": "^6.2.0",
+        "gh-pages": "^5.0.0",
         "html-webpack-plugin": "^5.5.0",
         "sass": "^1.58.0",
         "sass-loader": "^13.2.0",

@@ -1,18 +1,11 @@
 .nav {
     position: fixed;
     top: 0;
-    left: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1460px;
     padding: 3.2rem 2.4rem;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
