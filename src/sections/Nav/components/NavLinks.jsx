@@ -29,7 +29,6 @@ export const NavLinks = (props) => {
                                 : "#FFFFFF"
                             : "#24303E",
                     }}
-                    // style={{ color: props.scrolled ? "#24303E" : "#FFFFFF" }}
                 >
                     services
                 </a>
