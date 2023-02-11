@@ -14,7 +14,9 @@ body {
     overflow-x: hidden;
 }
 
-main {
+main,
+header,
+footer {
     margin: auto;
     max-width: 1728px;
 }

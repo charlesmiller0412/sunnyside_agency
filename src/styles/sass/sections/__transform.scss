@@ -12,15 +12,26 @@
         padding: 2.4rem 6.4rem;
         min-width: 50%;
         height: fit-content;
-        min-height: 28.5rem;
+        min-height: 30.9rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        max-width: 44rem;
+        justify-content: center;
+        max-width: 35rem;
         gap: 1.5vh;
-
+        @media screen and (min-width: $tablet) {
+            align-items: flex-start;
+            min-height: 28rem;
+            text-align: left;
+        }
+        @media screen and (min-width: $desktop) {
+            gap: 3.2rem;
+        }
+        & h2 {
+            max-width: 25rem;
+        }
         & p {
             color: $grayBlueD;
+            max-width: 44.5rem;
         }
         &--link {
             z-index: -1;
@@ -40,6 +51,9 @@
             -moz-transition: all 0.2s;
             -ms-transition: all 0.2s;
             -o-transition: all 0.2s;
+            @media screen and (min-width: $tablet) {
+                margin: 0;
+            }
             &:hover::after {
                 opacity: 1;
                 transition: all 0.2s;
@@ -72,8 +86,8 @@
         }
     }
     &__image {
-        min-width: 50%;
-        min-height: 100%;
+        width: 100%;
+        min-height: fit-content;
         height: fit-content;
         display: grid;
         place-items: center;

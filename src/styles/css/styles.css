@@ -16,7 +16,9 @@ body {
   overflow-x: hidden;
 }
 
-main {
+main,
+header,
+footer {
   margin: auto;
   max-width: 1728px;
 }
@@ -93,16 +95,35 @@ p {
   padding: 2.4rem 6.4rem;
   min-width: 50%;
   height: fit-content;
-  min-height: 28.5rem;
+  min-height: 30.9rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  max-width: 44rem;
+  justify-content: center;
+  max-width: 35rem;
   gap: 1.5vh;
+}
+@media screen and (min-width: 768px) {
+  .transform__text,
+  .stand__text {
+    align-items: flex-start;
+    min-height: 28rem;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .transform__text,
+  .stand__text {
+    gap: 3.2rem;
+  }
+}
+.transform__text h2,
+.stand__text h2 {
+  max-width: 25rem;
 }
 .transform__text p,
 .stand__text p {
   color: hsl(232deg, 10%, 55%);
+  max-width: 44.5rem;
 }
 .transform__text--link,
 .stand__text--link {
@@ -123,6 +144,12 @@ p {
   -moz-transition: all 0.2s;
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
+}
+@media screen and (min-width: 768px) {
+  .transform__text--link,
+  .stand__text--link {
+    margin: 0;
+  }
 }
 .transform__text--link:hover::after,
 .stand__text--link:hover::after {
@@ -157,8 +184,8 @@ p {
 }
 .transform__image,
 .stand__image {
-  min-width: 50%;
-  min-height: 100%;
+  width: 100%;
+  min-height: fit-content;
   height: fit-content;
   display: grid;
   place-items: center;
@@ -342,6 +369,7 @@ p {
   align-items: center;
   padding: 4rem 7rem;
   margin: auto;
+  max-width: 172.8rem;
 }
 @media screen and (min-width: 768px) {
   .footer {
@@ -404,6 +432,7 @@ p {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-width: 172.8rem;
   padding: 3.2rem 2.4rem;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
